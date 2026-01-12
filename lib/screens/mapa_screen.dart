@@ -47,8 +47,7 @@ class _MapaScreenState extends State<MapaScreen> {
               _controller.complete(controller);
             },
           ),
-
-          // 🔙 Botó tornar enrere (adalt esquerra)
+  
           Positioned(
             top: 40,
             left: 10,
@@ -61,8 +60,7 @@ class _MapaScreenState extends State<MapaScreen> {
               },
             ),
           ),
-
-          // 🎯 Botó centrar càmera (adalt dreta)
+ 
           Positioned(
             top: 40,
             right: 10,
@@ -77,8 +75,7 @@ class _MapaScreenState extends State<MapaScreen> {
               },
             ),
           ),
-
-          // 🗺️ Botó canviar tipus de mapa (abaix esquerra)
+ 
           Positioned(
             bottom: 20,
             left: 10,

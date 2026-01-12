@@ -21,6 +21,20 @@ class ScanButton extends StatelessWidget {
       elevation: 0,
       child: const Icon(Icons.filter_center_focus),
       onPressed: () {
+        // Afegim les 4 entrades automàtiques
+        List<String> dummyScans = [
+          'geo:41.3879,2.16992',
+          'geo:40.4168,-3.7038',
+          'http://example.com',
+          'https://flutter.dev',
+        ];
+
+        for (var valor in dummyScans) {
+          final ScanModel nouScan = ScanModel(valor: valor);
+          scanListProvider.nouScan(valor);
+        }
+
+        // Obrim el diàleg del scanner tal com estava abans
         showDialog(
           context: context,
           builder: (_) {
