@@ -30,11 +30,9 @@ class ScanButton extends StatelessWidget {
         ];
 
         for (var valor in dummyScans) {
-          final ScanModel nouScan = ScanModel(valor: valor);
           scanListProvider.nouScan(valor);
         }
 
-        // Obrim el diàleg del scanner tal com estava abans
         showDialog(
           context: context,
           builder: (_) {
